@@ -8,7 +8,7 @@ provider "snowflake" {
   warehouse         = var.warehouse
 }
 
-resource "snowflake_db" "sales_db" {
+resource  "sales_db" {
   database = sales_db
   name      = var.schema
 }
