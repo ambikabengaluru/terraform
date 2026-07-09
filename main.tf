@@ -9,6 +9,6 @@ provider "snowflake" {
 }
 
 resource "snowflake_db" "sales_db" {
-  database = snowflake_db.sales_db.name
+  database = sales_db
   name      = var.schema
 }
