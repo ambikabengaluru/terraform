@@ -20,3 +20,5 @@ variable "integration_name" {}
 variable "aws_role_arn" {}
 variable "s3_location" {}
 
+variable "stage_name" {}
+
