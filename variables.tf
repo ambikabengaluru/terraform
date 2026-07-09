@@ -5,3 +5,5 @@ variable "password" {
 }
 variable "role" {}
 variable "warehouse" {}
+variable "database" {}
+variable "schema" {}
