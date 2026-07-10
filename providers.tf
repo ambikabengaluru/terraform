@@ -21,6 +21,7 @@ provider "snowflake" {
   warehouse = var.warehouse
 
   preview_features_enabled = [
-    "snowflake_storage_integration_resource"
+    "snowflake_storage_integration_resource",
+    "snowflake_stage_resource"
   ]
 }
