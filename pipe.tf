@@ -15,5 +15,5 @@ FILE_FORMAT = (
 )
 EOT
 
-  auto_ingest = false
+  auto_ingest = true
 }
