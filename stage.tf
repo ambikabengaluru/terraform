@@ -6,5 +6,5 @@ resource "snowflake_stage" "external_stage" {
 
   url = var.s3_location
 
-  storage_integration = snowflake_storage_integration.s3_first.name
+  storage_integration = snowflake_storage_integration.s3_my.name
 }
