@@ -1,9 +1,9 @@
 
-resource "snowflake_database" "sale_db" {
+resource "snowflake_database" "test_db" {
   name = var.database
 }
 
-resource "snowflake_schema" "sale_schema" {
-  database = snowflake_database.sale_db.name
+resource "snowflake_schema" "test_schema" {
+  database = snowflake_database.test_db.name
   name      = var.schema
 }
