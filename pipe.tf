@@ -1,4 +1,4 @@
-resource "snowflake_pipe" "sales_pipe" {
+resource "snowflake_pipe" "terra_pipe" {
 
   database = snowflake_database.sample_db.name
   schema   = snowflake_schema.sample_schema.name
