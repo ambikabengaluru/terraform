@@ -1,4 +1,4 @@
-resource "snowflake_storage_integration" "s3_first" {
+resource "snowflake_storage_integration" "s3_my" {
   name    = var.integration_name
   type    = "EXTERNAL_STAGE"
 
