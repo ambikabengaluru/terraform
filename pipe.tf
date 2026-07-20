@@ -1,13 +1,13 @@
 resource "snowflake_pipe" "terra_pipe" {
 
-  database = snowflake_database.sample_db.name
-  schema   = snowflake_schema.sample_schema.name
+  database = snowflake_database.unique_db.name
+  schema   = snowflake_schema.unique_schema.name
 
   name = var.pipe_name
 
   copy_statement = <<EOT
-COPY INTO sample_db.sample_SCHEMA.EXAMPLE
-FROM @SAMPLE_DB.SAMPLE_SCHEMA.EXT_STG
+COPY INTO unique_db.unique_SCHEMA.EXAMPLE
+FROM @unique_DB.unique_SCHEMA.EXTERNAL_STG
 FILE_FORMAT = (
     TYPE = CSV
     FIELD_DELIMITER = ','
