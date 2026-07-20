@@ -1,4 +1,4 @@
-resource "snowflake_pipe" "terra_pipe" {
+resource "snowflake_pipe" "tera_pipe" {
 
   database = snowflake_database.unique_db.name
   schema   = snowflake_schema.unique_schema.name
@@ -7,7 +7,7 @@ resource "snowflake_pipe" "terra_pipe" {
 
   copy_statement = <<EOT
 COPY INTO unique_db.unique_SCHEMA.EXAMPLE
-FROM @unique_DB.unique_SCHEMA.EXTERNAL_STG
+FROM @unique_db.unique_schema.EXTERNAL_STG
 FILE_FORMAT = (
     TYPE = CSV
     FIELD_DELIMITER = ','
